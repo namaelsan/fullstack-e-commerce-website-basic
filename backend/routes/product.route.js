@@ -1,6 +1,4 @@
 import express from "express";
-import mongoose from 'mongoose';
-import Product from "../models/product.model.js";
 import { getProducts, updateProduct, createProduct, deleteProduct } from "../controllers/product.controller.js";
 
 const router = express.Router();

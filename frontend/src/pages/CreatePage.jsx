@@ -28,20 +28,21 @@ const CreatePage = () => {
         description: "Your product has been created successfuly",
         status: "success",
         duration: 5000,
-        isClosable: true
-      })
+        isClosable: true,
+      });
+      setNewProduct({ name: "", price: "", image: "" });
     } else {
       toast({
         title: "Error",
         description: message,
         status: "error",
         duration: 5000,
-        isClosable: true
-      })
+        isClosable: true,
+      });
     }
 
-    console.log("Success:"+success)
-    console.log("Message:"+message)
+    console.log("Success:" + success);
+    console.log("Message:" + message);
   };
 
   return (
